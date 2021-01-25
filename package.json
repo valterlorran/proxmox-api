@@ -31,8 +31,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc -p .",
-    "prepare": "npm run clean && npm run build",
-    "postinstall": "tsc -p ."
+    "prepare": "npm run clean && npm run build"
   },
   "author": "Uriel Chemouni <uchemouni@gmail.com>",
   "license": "GPL-3.0",
