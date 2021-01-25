@@ -1,4 +1,5 @@
 const path = require('path');
+const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
     entry: './src/index.ts',
@@ -22,6 +23,13 @@ module.exports = {
         libraryTarget: 'umd'
     },
     optimization: {
-        minimize: false
+        minimize: true,
+        minimizer: [
+            new TerserPlugin({
+                terserOptions: {
+                    keep_fnames: /AbortSignal/,
+                },
+            }),
+        ],
     }
 };
