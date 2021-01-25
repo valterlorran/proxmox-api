@@ -82,6 +82,9 @@ await theNode.qemu.$(vmid).agent['get-fsinfo'].$get()
 
 ## Changelog
 
+### 0.1.4
+ - add agent option, to allow security variables.
+
 ### V0.1.3
  - add authTimeout option, to limit authentification time.
  - add queryTimeout option to limit non auth request timeout.
